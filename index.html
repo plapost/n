@@ -19,214 +19,222 @@
   fbq('init', '938477018738809');
   fbq('track', 'PageView');
   </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=938477018738809&ev=PageView&noscript=1"
-  /></noscript>
+  <noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=938477018738809&ev=PageView&noscript=1"/>
+  </noscript>
   <!-- End Meta Pixel Code -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
 
-  <style>
-    :root{
-      --bg0:#070A12;
-      --bg1:#0B1022;
-      --stroke: rgba(255,255,255,.10);
-      --text: rgba(255,255,255,.90);
-      --muted: rgba(255,255,255,.68);
-      --muted2: rgba(255,255,255,.52);
-      --accent1:#8A5CFF;
-      --accent2:#00E5FF;
-      --accent3:#24FF9F;
-      --shadow: 0 18px 60px rgba(0,0,0,.55);
-      --radius: 22px;
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0;
-      font-family: "Manrope", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(1100px 700px at 10% 10%, rgba(138,92,255,.20), transparent 60%),
-        radial-gradient(900px 650px at 90% 20%, rgba(0,229,255,.16), transparent 55%),
-        radial-gradient(1000px 700px at 50% 100%, rgba(36,255,159,.12), transparent 60%),
-        linear-gradient(180deg, var(--bg0), var(--bg1));
-      overflow-x:hidden;
-    }
+<style>
 
-    .grain{
-      pointer-events:none;
-      position:fixed; inset:-40%;
-      background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.18'/%3E%3C/svg%3E");
-      mix-blend-mode:overlay;
-      transform:translate3d(0,0,0);
-      animation: drift 14s linear infinite;
-    }
-    @keyframes drift{
-      0%{transform:translate3d(-2%, -2%, 0)}
-      50%{transform:translate3d(2%, 1%, 0)}
-      100%{transform:translate3d(-2%, -2%, 0)}
-    }
+:root{
+--bg0:#070A12;
+--bg1:#0B1022;
+--stroke: rgba(255,255,255,.10);
+--text: rgba(255,255,255,.90);
+--muted: rgba(255,255,255,.68);
+--muted2: rgba(255,255,255,.52);
+--accent1:#8A5CFF;
+--accent2:#00E5FF;
+--accent3:#24FF9F;
+--shadow: 0 18px 60px rgba(0,0,0,.55);
+--radius:22px;
+}
 
-    .wrap{max-width:1100px; margin:0 auto; padding:26px 20px 90px}
+*{box-sizing:border-box}
+html,body{height:100%}
 
-    header{
-      display:flex; align-items:center; justify-content:space-between;
-      gap:14px; padding:10px 0 22px;
-    }
+body{
+margin:0;
+font-family:"Manrope",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+color:var(--text);
+background:
+radial-gradient(1100px 700px at 10% 10%, rgba(138,92,255,.20), transparent 60%),
+radial-gradient(900px 650px at 90% 20%, rgba(0,229,255,.16), transparent 55%),
+radial-gradient(1000px 700px at 50% 100%, rgba(36,255,159,.12), transparent 60%),
+linear-gradient(180deg,var(--bg0),var(--bg1));
+overflow-x:hidden;
+}
 
-    .brand{
-      display:flex; align-items:center; gap:12px;
-      text-decoration:none; color:var(--text);
-    }
+.wrap{
+max-width:1100px;
+margin:0 auto;
+padding:26px 20px 90px;
+}
 
-    .logo{
-      width:40px; height:40px; border-radius:14px;
-      background:
-        radial-gradient(18px 18px at 30% 30%, rgba(255,255,255,.22), transparent 55%),
-        linear-gradient(135deg, rgba(138,92,255,.95), rgba(0,229,255,.75));
-      box-shadow: 0 10px 28px rgba(138,92,255,.20);
-      border:1px solid rgba(255,255,255,.14);
-    }
+header{
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:14px;
+padding:10px 0 22px;
+}
 
-    .brand strong{font-weight:800; letter-spacing:.2px}
-    .tagline{font-size:12.5px; color:var(--muted2); margin-top:2px}
+.brand{
+display:flex;
+align-items:center;
+gap:12px;
+text-decoration:none;
+color:var(--text);
+}
 
-    .top-cta{
-      display:flex; gap:10px; align-items:center;
-    }
+.logo{
+width:40px;
+height:40px;
+border-radius:14px;
+background:
+radial-gradient(18px 18px at 30% 30%, rgba(255,255,255,.22), transparent 55%),
+linear-gradient(135deg, rgba(138,92,255,.95), rgba(0,229,255,.75));
+box-shadow:0 10px 28px rgba(138,92,255,.20);
+border:1px solid rgba(255,255,255,.14);
+}
 
-    .pill{
-      font-size:12.5px;
-      color:rgba(255,255,255,.82);
-      padding:9px 12px;
-      border-radius:999px;
-      background:rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      backdrop-filter: blur(12px);
-    }
+.brand strong{
+font-weight:800;
+letter-spacing:.2px;
+}
 
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center;
-      gap:10px;
-      border:none;
-      border-radius:14px;
-      padding:12px 16px;
-      font-weight:800;
-      color:#07101A;
-      text-decoration:none;
-      cursor:pointer;
-      box-shadow: 0 18px 60px rgba(0,0,0,.35);
-      transition: transform .15s ease, filter .15s ease;
-      user-select:none;
-      white-space:nowrap;
-    }
+.tagline{
+font-size:12.5px;
+color:var(--muted2);
+margin-top:2px;
+}
 
-    .btn:hover{transform: translateY(-1px); filter: brightness(1.03)}
-    .btn:active{transform: translateY(0px); filter: brightness(.98)}
+.top-cta{
+display:flex;
+gap:10px;
+align-items:center;
+}
 
-    .btn.tg{
-      background: linear-gradient(135deg, #2AABEE, #1E96D4);
-      color:white;
-    }
+.pill{
+font-size:12.5px;
+color:rgba(255,255,255,.82);
+padding:9px 12px;
+border-radius:999px;
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.10);
+backdrop-filter:blur(12px);
+}
 
-    .btn.secondary{
-      background: rgba(255,255,255,.06);
-      color:rgba(255,255,255,.92);
-      border:1px solid rgba(255,255,255,.12);
-      backdrop-filter: blur(12px);
-      box-shadow:none;
-    }
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+border:none;
+border-radius:14px;
+padding:12px 16px;
+font-weight:800;
+text-decoration:none;
+cursor:pointer;
+white-space:nowrap;
+transition:.15s;
+}
 
-    .hero{
-      position:relative;
-      padding:28px 0 10px;
-      display:grid;
-      grid-template-columns: 1.2fr .8fr;
-      gap:22px;
-      align-items:stretch;
-    }
+.btn:hover{
+transform:translateY(-1px);
+}
 
-    @media (max-width: 900px){
-      .hero{grid-template-columns:1fr; padding-top:12px}
-      .top-cta{display:none}
-    }
+.btn.tg{
+background:linear-gradient(135deg,#2AABEE,#1E96D4);
+color:white;
+}
 
-    .heroCard{
-      border-radius: var(--radius);
-      background: rgba(255,255,255,.05);
-      border:1px solid rgba(255,255,255,.10);
-      backdrop-filter: blur(14px);
-      box-shadow: var(--shadow);
-      padding:26px 24px;
-      position:relative;
-      overflow:hidden;
-    }
+.hero{
+position:relative;
+padding:28px 0 10px;
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:22px;
+}
 
-    .badgeRow{
-      display:flex; flex-wrap:wrap; gap:10px; align-items:center;
-      margin-bottom:14px;
-    }
+@media (max-width:900px){
+.hero{grid-template-columns:1fr}
+.top-cta{display:none}
+}
 
-    .badge{
-      display:inline-flex; align-items:center; gap:8px;
-      padding:8px 10px;
-      border-radius:999px;
-      font-size:12.5px;
-      color:rgba(255,255,255,.84);
-      background: rgba(0,0,0,.22);
-      border:1px solid rgba(255,255,255,.10);
-    }
+.heroCard{
+border-radius:var(--radius);
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.10);
+backdrop-filter:blur(14px);
+box-shadow:var(--shadow);
+padding:26px 24px;
+}
 
-    h1{
-      margin:0 0 12px;
-      font-size:44px;
-      line-height:1.05;
-      letter-spacing:-.8px;
-    }
+.badgeRow{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin-bottom:14px;
+}
 
-    .lead{
-      margin:0 0 18px;
-      color:var(--muted);
-      font-size:16.5px;
-      line-height:1.5;
-      max-width: 62ch;
-    }
+.badge{
+padding:8px 10px;
+border-radius:999px;
+font-size:12.5px;
+background:rgba(0,0,0,.22);
+border:1px solid rgba(255,255,255,.10);
+}
 
-    .featureList{
-      display:grid;
-      gap:10px;
-      margin:18px 0 22px;
-      padding:0;
-      list-style:none;
-    }
+h1{
+margin:0 0 12px;
+font-size:44px;
+line-height:1.05;
+}
 
-    .li{
-      display:flex; gap:12px; align-items:flex-start;
-      padding:12px 12px;
-      border-radius:16px;
-      background: rgba(255,255,255,.04);
-      border:1px solid rgba(255,255,255,.08);
-    }
+.lead{
+margin:0 0 18px;
+color:var(--muted);
+font-size:16.5px;
+line-height:1.5;
+}
 
-    .li b{display:block; font-weight:800}
-    .li span{display:block; color:var(--muted2); font-size:13.5px; margin-top:2px}
+.featureList{
+display:grid;
+gap:10px;
+margin:18px 0 22px;
+padding:0;
+list-style:none;
+}
 
-    footer{
-      margin-top:22px;
-      color:var(--muted2);
-      font-size:12.5px;
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      justify-content:space-between;
-      align-items:center;
-      padding-top:16px;
-      border-top: 1px solid rgba(255,255,255,.08);
-    }
-  </style>
+.li{
+padding:12px;
+border-radius:16px;
+background:rgba(255,255,255,.04);
+border:1px solid rgba(255,255,255,.08);
+}
+
+.li b{
+display:block;
+font-weight:800;
+}
+
+.li span{
+display:block;
+color:var(--muted2);
+font-size:13.5px;
+margin-top:2px;
+}
+
+footer{
+margin-top:22px;
+color:var(--muted2);
+font-size:12.5px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+justify-content:space-between;
+align-items:center;
+padding-top:16px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+</style>
 </head>
 
 <body>
@@ -234,18 +242,30 @@
 <div class="wrap">
 
 <header>
-<a class="brand" href="#top">
+
+<a class="brand" href="#">
 <div class="logo"></div>
+
 <div>
 <strong>Poker Room Korea</strong>
 <div class="tagline">레이크백 • 보너스 • 24시간 캐시게임 & 토너먼트</div>
 </div>
+
 </a>
 
 <div class="top-cta">
 <div class="pill">🔥 매주 최대 50% 레이크백</div>
-<a class="btn tg" href="https://t.me/igro_man9" target="_blank">Telegram ↗</a>
+
+<a class="btn tg"
+href="https://t.me/+plPhGY9wL10yODll"
+target="_blank">
+
+Telegram ↗
+
+</a>
+
 </div>
+
 </header>
 
 <main class="hero">
@@ -253,9 +273,11 @@
 <section class="heroCard">
 
 <div class="badgeRow">
+
 <div class="badge">🔥 최대 50% 레이크백</div>
 <div class="badge">🎁 첫 입금 보너스</div>
 <div class="badge">♣️ 24시간 캐시게임 & 토너먼트</div>
+
 </div>
 
 <h1>지금 바로 유리하게 시작하세요.</h1>
@@ -268,44 +290,38 @@
 <ul class="featureList">
 
 <li class="li">
-<div>
 <b>매주 최대 50% 레이크백</b>
 <span>지속적인 수익을 위한 레이크 반환.</span>
-</div>
 </li>
 
 <li class="li">
-<div>
 <b>첫 입금 보너스</b>
 <span>당신의 뱅크롤을 위한 강력한 시작.</span>
-</div>
 </li>
 
 <li class="li">
-<div>
 <b>빠른 출금</b>
 <span>신속한 출금 및 Telegram 지원.</span>
-</div>
 </li>
 
 <li class="li">
-<div>
 <b>24시간 캐시게임 & 토너먼트</b>
 <span>언제든지 플레이하세요.</span>
-</div>
 </li>
 
 <li class="li">
-<div>
 <b>실제 플레이어와 게임</b>
 <span>활발한 플레이어 풀과 공정한 게임.</span>
-</div>
 </li>
 
 </ul>
 
-<a class="btn tg" href="https://t.me/igro_man9" target="_blank">
+<a class="btn tg"
+href="https://t.me/+plPhGY9wL10yODll"
+target="_blank">
+
 지금 등록하고 보너스를 받으세요
+
 </a>
 
 </section>
@@ -313,8 +329,10 @@
 </main>
 
 <footer>
+
 <div>© Poker Room Korea</div>
 <div>18+ 책임감 있게 플레이하세요</div>
+
 </footer>
 
 </div>
